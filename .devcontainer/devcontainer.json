@@ -1,0 +1,14 @@
+{
+  "name": "BRVM Codespace",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt || pip install jupyterlab ipykernel pandas numpy matplotlib seaborn && python -m ipykernel install --user --name=brvm-kernel --display-name 'BRVM Kernel'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
